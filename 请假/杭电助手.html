@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://zane0227.github.io/Mypage/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>杭电助手</title>
+<style>
+    div{width:1150px;
+        height:50px;
+        left: 5px;
+        line-height: 50px;
+        border:0px solid red;
+        margin: 0 auto;
+        font-size: 50px;
+        color: black;
+        font-weight: 500;
+        text-align: center;
+       }
+       .info{
+        position: absolute;
+        z-index: 10;
+        width:400px;
+        height:150px;
+        left: 650px;
+        line-height: 150px;
+        border:0px solid red;
+        margin: 0 auto;
+        font-size: 45px;
+        color: black;
+        font-weight: 300;
+        text-align: right;
+       }
+       .reason{
+        position: absolute;
+        z-index: 10;
+        width:400px;
+        height:150px;
+        left: 125px;
+        line-height: 150px;
+        border:0px solid red;
+        margin: 0 auto;
+        font-size: 38px;
+        color: #A9A9A9;
+        font-weight: 300;
+        text-align: left;
+       }
+       .date{
+        position: absolute;
+        z-index: 10;
+        width:400px;
+        height:150px;
+        left: 125px;
+        line-height: 150px;
+        border:0px solid red;
+        margin: 0 auto;
+        font-size: 35px;
+        color: #A9A9A9;
+        font-weight: 300;
+        text-align: left;
+       }
+       .time{
+        z-index: 10;
+        position: relative;
+        top: 1320px;
+        left: -20px;
+        font-family:'Segoe UI';
+       }
+</style>
+</head>
+<body onload="setinfo()">
+
+    <div style="width: 100%; height: 361px; position: absolute; top: 0px;" id="ball">
+        <img style="z-index:1" src="./杭电助手_files/2.jpg" alt="picture">
+    </div>
+
+    <div class="time" id="dtime">当前时间:7月8日 下午 8:11:50</div>
+
+    <div class="info" style="top: 1650px" id="name"></div>
+
+    <div class="info" style="top: 1810px" id="number"></div>
+
+    <div class="info" style="top: 1970px" id="xueyuan"></div>
+
+    <div class="info" style="top: 2130px" id="banji"></div>
+
+    <div class="info" style="top: 2290px" id="teacher"></div>
+
+    <div class="reason" style="top: 3900px" id="reason"></div>
+
+    <div class="date" style="top: 2810px" id="date1">2020年7月8日</div>
+    <div class="date" style="top: 3140px" id="date2">2020年7月8日</div>
+
+    <img style="z-index: 10;top: 0px;position:absolute;left: 15px" src="./杭电助手_files/back.png" onclick="jump()">
+
+    <script type="text/javascript">
+        function jump(){
+            url = document.location.href.split("?");
+            base = "homepage.html"
+            gourl = base + "?" + url[1]
+            window.location.href=gourl;
+        }
+    </script>
+
+    <script type="text/javascript">
+        var ball=document.getElementById('ball');
+        var h=window.innerHeight/2;
+        ball.style.height=h+'px';
+    </script>
+
+    <script type="text/javascript">
+        //setInterval("setinfo()",5000)
+        function setinfo(){
+            url= document.location.href.split("?");
+            temp =url[1].split("&");
+            var val = Array()
+            for ( var i=0;i<temp.length;i++)
+            {
+                var pair=temp[i].split("=");
+                val[i]=pair[1];
+            }
+
+            name = decodeURI(val[0]);
+            number = val[1];
+            xueyuan = decodeURI(val[2]);
+            banji = val[3];
+            teacher = decodeURI(val[4]);
+            reason = decodeURI(val[5]);
+
+            document.getElementById("name").innerHTML = name;
+            document.getElementById("number").innerHTML = number;
+            document.getElementById("xueyuan").innerHTML = xueyuan;
+            document.getElementById("banji").innerHTML = banji;
+            document.getElementById("teacher").innerHTML = teacher;
+            document.getElementById("reason").innerHTML = reason;
+        }
+    </script>
+
+<script type="text/javascript">
+    var divobj=document.getElementById('dtime');
+    //定时器的用法
+    //        // 补0
+    var str_s = "0"
+    var str_h = "0"
+    var str_i = "0"
+    setInterval("settime()",1000);   //每秒
+    function settime(){
+    var node = new Date();
+    var y=node.getFullYear();
+    var m=(node.getMonth()+1);
+    var d=node.getDate();
+    var h=node.getHours();
+    var i=node.getMinutes();
+    var s=node.getSeconds();
+    var date=y+"年"+m+"月"+d+"日"
+
+
+    if (s<10)
+    {
+        str_s = "0" + String(s)
+    }else
+    {
+        str_s = String(s)
+    }
+
+    if (i<10)
+    {
+        str_i = "0"+String(i)
+    }else
+    {
+        str_i = String(i)
+    }
+
+    if (h>12)
+    {
+        var time="当前时间:" + (m+"月"+d+"日 下午 "+(h-12)+":"+str_i+":"+str_s);
+    }
+    else
+    {
+        var time="当前时间:" + (m+"月"+d+"日 上午 "+h+":"+str_i+":"+str_s);
+    }
+    
+    var divVal=divobj.innerHTML=time;
+    document.getElementById("date1").innerHTML = date;
+    document.getElementById("date2").innerHTML = date;
+}
+</script>
+
+</body></html>
