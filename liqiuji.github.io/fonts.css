@@ -1,0 +1,9 @@
+ 
+@font-face {
+  font-family: "kuaile";
+  src: url("./font/站酷快乐体.ttf"); /*IE9*/
+/*  src: url("youfont.eot?#iefix") format("embedded-opentype"), 
+       url("youfont.ttf") format("truetype"), /*手机端*/ 
+     /*  url("youfont.woff") format("woff"), /*web端*/
+      url("youfont.svg") format("svg");  /*ios 
+}
