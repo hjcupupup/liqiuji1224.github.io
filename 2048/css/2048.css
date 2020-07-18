@@ -1,0 +1,67 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;
+}
+header{
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+header h1{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+header #newgamebutton{
+	display: block;
+	margin: 20px auto;
+	width: 100px;
+	padding: 10px 10px;
+	background-color: cadetblue;
+	color: white;
+	border-radius: 10px;
+	text-decoration: none;;
+}
+
+header #newgamebutton:hover{
+	background-color: aquamarine;
+}
+
+header p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	margin: 20px auto;
+}
+
+#grid-container{
+	width:460px;
+	height: 460px;
+	padding: 20px;
+	margin: 50px auto;
+	background-color: cadetblue;
+	position: relative;
+	border-radius: 10px;
+}
+.grid-cell{
+	width: 100px;
+	height: 100px;
+	border-radius: 6px;
+	background-color: darkseagreen;
+	position: absolute;
+}
+
+.number-cell{
+	width:100px;
+	height:100px;
+	text-align: center;
+	line-height: 100px;
+	border-radius: 6px;
+	position: absolute;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+}
