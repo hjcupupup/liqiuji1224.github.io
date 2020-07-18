@@ -1,0 +1,113 @@
+ 
+    /* 按钮样式 */
+    .button{
+    	display: inline-block;
+    	padding: 10px;
+    	background: #9F8B77;
+    	border-radius: 6px;
+    	color: #FFF;
+    	cursor: pointer;
+    }
+	#gamePanel{
+		margin: 0 auto;
+		width: 500px;
+		position: relative;
+	}
+	#gridPanel{
+		width: 480px;
+		height: 480px;
+		background: #BBADA0;
+		border-radius: 10px;
+		padding: 20px 0 0 20px;
+		position: relative;
+	}
+	#gamePanel p{
+		padding: 8px;
+	}
+    /* 背景网格 */
+    #gamePanel .grid{
+		background-color: #ccc0b3;
+		float: left;
+		margin: 0 20px 20px 0;
+    }
+   /* 格式化前景单元格中位置 */
+    .cell{
+    	position: absolute;
+    	line-height: 100px;
+    	vertical-align: middle;
+    	text-align: center;
+    	font-size: 60px;
+    	color: #776E65;
+    }
+    /* 前景格中的行位置 */
+    #cell00, #cell01, #cell02, #cell03{
+    	top: 20;
+    }
+    #cell10, #cell11, #cell12, #cell13{
+    	top: 140px;
+    }
+    #cell20, #cell21, #cell22, #cell23{
+    	top: 260px;
+    }
+    #cell30, #cell31, #cell32, #cell33{
+    	top: 380px;
+    }
+    /* 前景格中的列位置 */
+    #cell00, #cell10, #cell20, #cell30{
+    	left: 20px;
+    }
+    #cell01, #cell11, #cell21, #cell31{
+    	left: 140px;
+    }
+    #cell02, #cell12, #cell22, #cell32{
+    	left: 260px;
+    }
+    #cell03, #cell13, #cell23, #cell33{
+    	left: 380px;
+    }
+    /* 数字显示效果 */
+   	.num2,.num4,.num16, .num32, .num64, .num128, .num256, .num512, .num1024, .num2048, .num4096, .num8192{
+		color: #fff;
+	}
+	.num1024, .num2048, .num4096, .num8192{
+	 	font-size: 40px;
+	}
+   	.num2{
+   		background: #f8959a;
+   	}
+	.num4{
+		background: #f6b495;
+	}            
+	.num8{
+		background: #fff97c;
+	}
+    .num16{
+		background:#81d5ab;
+	}
+    .num32{
+		background:#82c8ca;
+	}
+    .num64{
+		background:#85a6d3;
+    }
+	.num128{
+		background:#b598c9;
+	}
+	.num256{
+		background:#f02b32;
+	}
+	.num512{
+		background:#f04b2f;
+	}
+	.num1024{
+		background:#fcf205;
+	}
+	.num2048{
+		background:#01bf90;
+	}
+	.num4096{
+		background:#0c00bf;
+	}
+	.num8192{
+		background:#990d9e;
+	}

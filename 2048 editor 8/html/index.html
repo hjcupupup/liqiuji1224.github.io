@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="../css/index.css" rel="stylesheet" type="text/css" />
+		<link href="../css/basic.css" rel="stylesheet" type="text/css">
+		
+	</head>
+
+	<body>
+		<header>
+		    <h1>2048 缤纷版</h1>
+			<nav >
+				<a class="button" id="newGame" href="orginal game.html">原版</a>
+				<a class="button" id="newGame" href="colorful.html">缤纷版</a>
+				<a class="button" id="newGame" href="colorful circle.html">缤纷无限版</a>
+				<a class="button" id="newGame" href="player2.html">对战版</a>
+				</nav>
+		</header>
+		<div class="caption">
+			<p class="ruleTitle">游戏规则</p>
+			<p class="rule" id="rule">共有四种不同的游戏模式可选择，分为：<br><br>
+			<span>原版，缤纷版，缤纷无限版，对战版</span><br><br>
+			不同版本的规则介绍请点击下方按钮，将显示规则简介。</p>
+			</div>
+		<div ><nav calss="ruleIntro">
+		<input type="button" class="button" id="rule1" value="原版" ></input>
+		<input type="button" class="button" id="rule2" value="缤纷版"></input>
+		<input type="button" class="button" id="rule3"  value="缤纷无限版"></input>
+		<input type="button" class="button" id="rule4"  value="对战版"></input>
+		</nav></div>
+		<div id="gameOver" >
+			<div><!--背景 --></div>
+			<p><!-- 前景 -->
+				游戏结束!<br>
+				分数: <span id="finalScore">0</span><br>
+				<a class="button" id="restart">Try Again!</a>
+			</p>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/rule.js"></script>
+</html>
