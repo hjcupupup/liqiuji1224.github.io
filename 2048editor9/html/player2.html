@@ -9,18 +9,22 @@
 	
 
    </head>
-   <!-- <script type="text/javascript" src="../js/support3.js"></script> -->
-   <script type="text/javascript" src="../js/player2/splayer2.js"></script>
-   <script type="text/javascript" src="../js/mainp2.js"></script>
-    <script type="text/javascript" src="../js/player2/gplayer2.js"></script>
-   <script type="text/javascript" src="../js/animation.js"></script>
+    <script src="../js/allP2/GAME.js"></script>
+	<script src="../js/allP2/animation1.js"></script>
+	<script src="../js/allP2/animation2.js"></script>
+	<script src="../js/allP2/gameover.js"></script>
+	<script src="../js/allP2/mainplayer2.js"></script>
+	<script src="../js/allP2/player1.js"></script>
+	<script src="../js/allP2/player2.js"></script>
+	<script src="../js/allP2/supportp2.js"></script>
+		   
 <body>
 <header>
     <h1>2048 对战</h1>
 </header>
 <div id="gamePanel">
 	<p><a class="button" id="newGame">重新开始游戏</a>
-	<a href="index.html" class="button" id="backIndex">回到首页</a>&nbsp 玩家1分数： <span id="score1">0</span>&nbsp 玩家2分数： <span id="score2">0</span></p>
+	<a href="index.html" class="button" id="backIndex">回到首页</a></p>
 	<div id="gridPanelFirst">
 	    <div class="grid" > </div>
 	    <div class="grid" > </div>
@@ -63,7 +67,10 @@
 	    <div class="cell " id="cell33" > </div>
 
 	</div>
-	<div id="board"></div>
+	<div id="board">
+		<div class="scoreBoard1"><p> <br>玩家1分数： <br>  <br><br><span id="score1">0</span></p></div>
+		<div class="scoreBoard2"><p> <br>玩家2分数： <br>  <br><br><span id="score2">0</span></p></div>
+	</div>
 	<div id="gridPanelSecond">
 	    <div class="grid" > </div>
 	    <div class="grid" > </div>
