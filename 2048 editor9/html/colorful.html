@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>2048</title>
+	<link href="../css/colorful.css" rel="stylesheet" type="text/css" />
+	<link href="../css/basic.css" rel="stylesheet" type="text/css">
+
+	
+
+   </head>
+   <script type="text/javascript" src="../js/support.js"></script>
+   <script type="text/javascript" src="../js/color/supportcolor.js"></script>
+   <script type="text/javascript" src="../js/main.js"></script>
+   <script type="text/javascript" src="../js/g%20for%20p1.js"></script>
+   <script type="text/javascript" src="../js/animation.js"></script>
+<body>
+<header>
+    <h1>2048 缤纷版</h1>
+</header>
+<div id="gamePanel">
+	<p><a class="button" id="newGame">重新开始游戏</a>
+	<a href="index.html" class="button" id="backIndex">回到首页</a>&nbsp 分数: <span id="score">0</span></p>
+	<div id="gridPanel">
+	    <div class="grid" > </div>
+	    <div class="grid" > </div>
+	    <div class="grid" > </div>
+	    <div class="grid" > </div>
+	
+	    <div class="grid" > </div>
+	    <div class="grid" > </div>
+	    <div class="grid" > </div>
+	    <div class="grid" > </div>
+	
+	    <div class="grid" > </div>
+	    <div class="grid" > </div>
+	    <div class="grid" > </div>
+	    <div class="grid" > </div>
+	
+	    <div class="grid" > </div>
+	    <div class="grid" > </div>
+	    <div class="grid" > </div>
+	    <div class="grid" > </div>
+	    <!-- 定义一对一的网格进行匹配，避免算法自动生成导致的匹配错位 -->
+	    <div class="cell " id="cell00" > </div>
+	    <div class="cell " id="cell01" > </div>
+	    <div class="cell " id="cell02" > </div>
+	    <div class="cell " id="cell03" > </div>
+	    
+	   	<div class="cell " id="cell10" > </div>
+	    <div class="cell " id="cell11" > </div>
+	    <div class="cell " id="cell12" > </div>
+	    <div class="cell " id="cell13" > </div>
+		
+		<div class="cell " id="cell20" > </div>
+	    <div class="cell " id="cell21" > </div>
+	    <div class="cell " id="cell22" > </div>
+	    <div class="cell " id="cell23" > </div>
+
+		<div class="cell " id="cell30" > </div>
+	    <div class="cell " id="cell31" > </div>
+	    <div class="cell " id="cell32" > </div>
+	    <div class="cell " id="cell33" > </div>
+
+	</div>
+	<div id="gameOver">
+		<div><!--背景 --></div>
+		<p><!-- 前景 -->
+			游戏结束!<br>
+			分数: <span id="finalScore">0</span><br>
+			<a class="button" id="restart">再来一局!</a>
+		</p>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+ 
+    /* 按钮样式 */
+    .button{
+    	display: inline-block;
+    	padding: 10px;
+    	background: #9F8B77;
+    	border-radius: 6px;
+    	color: #FFF;
+    	cursor: pointer;
+    }
+	#gamePanel{
+		margin: 0 auto;
+		width: 1230px;
+		position: relative;
+	}
+	#gridPanelFirst,#gridPanelSecond{
+		display: inline-block;
+		width: 480px;
+		height: 480px;
+		background: #BBADA0;
+		border-radius: 10px;
+		padding: 20px 0 0 20px;
+		position: relative;
+	}
+	#board{
+		display: inline-block;
+		width: 200px;
+		height: 480px;
+		background: #BBADA0;
+		border-radius: 10px;
+		padding: 20px 0 0 0px;
+		position: relative;
+	}
+	#gamePanel p{
+		padding: 8px;
+	}
+    /* 背景网格 */
+    #gamePanel .grid{
+		background-color: #ccc0b3;
+		float: left;
+		margin: 0 20px 20px 0;
+    }
+   /* 格式化前景单元格中位置 */
+    .cell{
+    	position: absolute;
+    	line-height: 100px;
+    	vertical-align: middle;
+    	text-align: center;
+    	font-size: 60px;
+    	color: #776E65;
+    }
+    /* 前景格中的行位置 */
+    #cell00, #cell01, #cell02, #cell03{
+    	top: 20;
+    }
+    #cell10, #cell11, #cell12, #cell13{
+    	top: 140px;
+    }
+    #cell20, #cell21, #cell22, #cell23{
+    	top: 260px;
+    }
+    #cell30, #cell31, #cell32, #cell33{
+    	top: 380px;
+    }
+    /* 前景格中的列位置 */
+    #cell00, #cell10, #cell20, #cell30{
+    	left: 20px;
+    }
+    #cell01, #cell11, #cell21, #cell31{
+    	left: 140px;
+    }
+    #cell02, #cell12, #cell22, #cell32{
+    	left: 260px;
+    }
+    #cell03, #cell13, #cell23, #cell33{
+    	left: 380px;
+    }
+	#cellA00, #cellA01, #cellA02, #cellA03{
+		top: 20;
+	}
+	#cellA10, #cellA11, #cellA12, #cellA13{
+		top: 140px;
+	}
+	#cellA20, #cellA21, #cellA22, #cellA23{
+		top: 260px;
+	}
+	#cellA30, #cellA31, #cellA32, #cellA33{
+		top: 380px;
+	}
+	/* 前景格中的列位置 */
+	#cellA00, #cellA10, #cellA20, #cellA30{
+		left: 20px;
+	}
+	#cellA01, #cellA11, #cellA21, #cellA31{
+		left: 140px;
+	}
+	#cellA02, #cellA12, #cellA22, #cellA32{
+		left: 260px;
+	}
+	#cellA03, #cellA13, #cellA23, #cellA33{
+		left: 380px;
+	}
+    /* 数字显示效果 */
+   	.num8, .num16, .num32, .num64, .num128, .num256, .num512, .num1024, .num2048, .num4096, .num8192{
+		color: #fff;
+	}
+	.num1024, .num2048, .num4096, .num8192{
+	 	font-size: 40px;
+	}
+   	.num2{
+   		background: #eee4da;
+		
+   	}
+	.num4{
+		background: #ede0c8;
+	}            
+	.num8{
+		background: #f2b179;
+	}
+    .num16{
+		background:#f59563;
+	}
+    .num32{
+		background:#f67c5f;
+	}
+    .num64{
+		background:#f65e3b;
+    }
+	.num128{
+		background:#edcf72;
+	}
+    .num256{
+		background:#edcc61;
+	}
+    .num512{
+		background:#9c0;
+	}
+    .num1024{
+		background:#33b5e5;
+	}
+    .num2048{
+		background:#09c;
+	}
+    .num4096{
+		background:#a6c;
+	}
+    .num8192{
+		background:#93c;
+	}
